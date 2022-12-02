@@ -21,14 +21,15 @@ const produtos = [
         categoria: "Escolar",
         valor: 7.50
     },
+
 ]
 
-
-function listar() {
-    produtos.forEach(p => {
-        console.log(p)
+function listar_por_categoria(categoria) {
+    produtos.forEach(prod => {
+        if (categoria == prod.categoria) {
+            console.log(prod) }
     })
 }
 
-
+console.log(listar_por_categoria("Eletrônico"))
 
