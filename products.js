@@ -33,3 +33,12 @@ function listar_por_categoria(categoria) {
 
 console.log(listar_por_categoria("Eletrônico"))
 
+function listar_por_valor(valor) {
+    produtos.forEach(prod => {
+        if (valor == prod.valor) {
+            console.log(prod) }
+    })
+}
+
+console.log(listar_por_valor(0.50))
+
